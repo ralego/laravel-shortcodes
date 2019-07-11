@@ -1,0 +1,39 @@
+{
+    "name": "ralego/laravel-shortcodes",
+    "description": "A jetpack shortcodes module",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rafael Lemus G",
+            "email": "ralego2005@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.1.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ralego\\Shortcode\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ralego\\Shortcode\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ralego\\Shortcode\\ShortcodeServiceProvider"
+            ]
+        }
+    }
+}
